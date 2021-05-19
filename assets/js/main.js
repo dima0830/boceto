@@ -1,167 +1,137 @@
 $(document).ready(function(){
-  $('#header').prepend('<div id="menu-icon"><span class="first"></span><span class="second"></span><span class="third"></span></div>');
-  
-  $("#menu-icon").on("click", function(){
-    $("nav").slideToggle();
-    $(this).toggleClass("active");
-  });
-  // intervalos carruseles home
-  $('#tienda').carousel({
-    interval:   8000
-  });
-  $('#tienda2').carousel({
-    interval:   9000
-  });
-  $('#tienda3').carousel({
-    interval:   8500
-  });
-  $('#marcas').carousel({
-    interval:   5000
-  });
-
-// fancy box 
-$(".fancyb").fancybox();
-$(".fancyform").fancybox({
-  padding:    0
-});
-
-// microfono
-const searchForm = document.querySelector("#search-form");
-const searchFormInput = searchForm.querySelector("input"); // <=> document.querySelector("#search-form input");
-const info = document.querySelector(".info");
-
-// The speech recognition interface lives on the browser’s window object
-const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition; // if none exists -> undefined
-
-if(SpeechRecognition) {
-  console.log("Your Browser supports speech Recognition");
-  
-  const recognition = new SpeechRecognition();
-  recognition.continuous = true;
-  // recognition.lang = "en-US";
-
-  searchForm.insertAdjacentHTML("beforeend", '<button type="button" class="voiceicon"><span class="of-voice"></span></button>');
-  searchFormInput.style.paddingRight = "50px";
-
-  const micBtn = searchForm.querySelector("button");
-  const micIcon = micBtn.firstElementChild;
-
-  micBtn.addEventListener("click", micBtnClick);
-  function micBtnClick() {
-    if(micIcon.classList.contains("of-voice")) { // Start Voice Recognition
-      recognition.start(); // First time you have to allow access to mic!
-    }
-    else {
-      recognition.stop();
-    }
-  }
-
-  recognition.addEventListener("start", startSpeechRecognition); // <=> recognition.onstart = function() {...}
-  function startSpeechRecognition() {
-    micIcon.classList.remove("of-voice");
-    micIcon.classList.add("of-voice-slash");
-    searchFormInput.focus();
-    console.log("Voice activated, SPEAK");
-  }
-
-  recognition.addEventListener("end", endSpeechRecognition); // <=> recognition.onend = function() {...}
-  function endSpeechRecognition() {
-    micIcon.classList.remove("of-voice-slash");
-    micIcon.classList.add("of-voice");
-    searchFormInput.focus();
-    console.log("Speech recognition service disconnected");
-  }
-
-  recognition.addEventListener("result", resultOfSpeechRecognition); // <=> recognition.onresult = function(event) {...} - Fires when you stop talking
-  function resultOfSpeechRecognition(event) {
-    const current = event.resultIndex;
-    const transcript = event.results[current][0].transcript;
-    
-    if(transcript.toLowerCase().trim()==="stop recording") {
-      recognition.stop();
-    }
-    else if(!searchFormInput.value) {
-      searchFormInput.value = transcript;
-    }
-    else {
-      if(transcript.toLowerCase().trim()==="go") {
-        searchForm.submit();
-      }
-      else if(transcript.toLowerCase().trim()==="reset input") {
-        searchFormInput.value = "";
-      }
-      else {
-        searchFormInput.value = transcript;
-      }
-    }
-    // searchFormInput.value = transcript;
-    // searchFormInput.focus();
-    // setTimeout(() => {
-    //   searchForm.submit();
-    // }, 500);
-  }
-  
-  info.textContent = 'Voice Commands: "stop recording", "reset input", "go"';
-  
-}
-else {
-  console.log("Your Browser does not support speech Recognition");
-  info.textContent = "Your Browser does not support Speech Recognition";
-}
-// fin microfono
-
-// boton + y - 
-$('.btn-plus, .btn-minus').on('click', function(e) {
-  const isNegative = $(e.target).closest('.btn-minus').is('.btn-minus');
-  const input = $(e.target).closest('.input-group').find('input');
-  if (input.is('input')) {
-    input[0][isNegative ? 'stepDown' : 'stepUp']()
-  }
-})
-});//fin
-
-(function() {
- 
-  window.inputNumber = function(el) {
-
-    var min = el.attr('min') || false;
-    var max = el.attr('max') || false;
-
-    var els = {};
-
-    els.dec = el.prev();
-    els.inc = el.next();
-
-    el.each(function() {
-      init($(this));
+    $(".fancyb").fancybox();
+    $(".fancyform").fancybox({
+        padding:    0
     });
 
-    function init(el) {
+    $("a.afancybox").fancybox();
+    $("a.ifancybox").fancybox({'type':'iframe'});
 
-      els.dec.on('click', decrement);
-      els.inc.on('click', increment);
+    
+     $('#notificationModal').modal('show'); 
 
-      function decrement() {
-        var value = el[0].value;
-        value--;
-        if(!min || value >= min) {
-          el[0].value = value;
+     jQuery("#formID").validationEngine();
+
+    $('#list').click(function(event){
+      event.preventDefault();
+      $('#tiendaaa .item').addClass('list-group-item');
+    });
+    
+    $('#grid').click(function(event){
+      event.preventDefault();
+      $('#tiendaaa .item').removeClass('list-group-item');
+      $('#tiendaaa .item').addClass('grid-group-item');
+    });
+
+   
+    $(".dropdown").hover(
+        function() {
+            $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true,true).slideDown("800");
+            $(this).toggleClass('open');
+        },
+        function() {
+            $('.dropdown-menu', this).hide();
+            $(this).toggleClass('open');
         }
-      }
+    );
 
-      function increment() {
-        var value = el[0].value;
-        value++;
-        if(!max || value <= max) {
-          el[0].value = value++;
+
+    $('#tienda').carousel({
+        interval:   8000
+    });
+
+     $('#tienda-mobil').carousel({
+        interval:   8000
+    });
+
+
+    $('#tienda2').carousel({
+        interval:   9000
+    });
+
+    $('#marcas').carousel({
+        interval:   7000
+    });
+
+
+    $(window).scroll(function (event) {
+        var scroll = $(window).scrollTop();
+        if(scroll > 150) {
+           $( "#trBuscar" ).show();
+           $( ".busc2" ).hide();
+           $( ".window" ).css('padding-top','50px');
+           $( ".busc2 form" ).hide();
         }
-      }
+    });
+
+    $( "#trBuscar" ).on('click', function(e){
+        $( ".busc2" ).show();
+        $( ".busc2 form" ).show();
+        $( ".window" ).css('padding-top','0px');
+        $( "#inputBuscar" ).focus();
+        e.preventDefault();
+        return false; 
+    });
+
+   var $height = $(window).scrollTop();
+   if($height > 50) {
+        $('#bucas').addClass('actve-scroll');
+    } else {
+        $('#bucas').removeClass('actve-scroll');
     }
-  }
-})();
-
-inputNumber($('.input-number'));
 
 
+    $('.menu-toggle').click(function(){
+        $(this).toggleClass('open');
+    });
 
 
+
+    $("#flechaArriba").click(function() {
+    $("#campoNumero").val()++;
+    });
+
+    $("#flechaabajo").click(function() {
+    $("#campoNumero").val()--;
+    });
+
+
+ 
+    $('a[href="#toggle-search"], .navbar-bootsnipp .bootsnipp-search .input-group-btn > .btn[type="reset"]').on('click', function(event) {
+    event.preventDefault();
+    $('.navbar-bootsnipp .bootsnipp-search .input-group > input').val('');
+    $('.navbar-bootsnipp .bootsnipp-search').toggleClass('open');
+    $('a[href="#toggle-search"]').closest('li').toggleClass('active');
+
+    if ($('.navbar-bootsnipp .bootsnipp-search').hasClass('open')) {
+      /* I think .focus dosen't like css animations, set timeout to make sure input gets focus */
+      setTimeout(function() { 
+        $('.navbar-bootsnipp .bootsnipp-search .form-control').focus();
+      }, 100);
+    }     
+  });
+
+  $(document).on('keyup', function(event) {
+    if (event.which == 27 && $('.navbar-bootsnipp .bootsnipp-search').hasClass('open')) {
+      $('a[href="#toggle-search"]').trigger('click');
+    }
+  });
+
+
+  $( window ).resize(function() {
+    location.reload();
+  }); 
+
+
+
+ 
+});
+
+         jQuery(document).ready(function($) {
+          var Body = jQuery('body');
+          Body.addClass('preloader-site');
+      });
+      jQuery(window).load(function() {
+          jQuery('.preloader-wrapper').fadeOut();
+          jQuery('body').removeClass('preloader-site');
+      });

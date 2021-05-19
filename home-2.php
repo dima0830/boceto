@@ -24,8 +24,8 @@
 								</a>
 							</div>
 							<div class="col-xs-8 col-xs-offset-1">
-								<a href="https://i.ytimg.com/vi/HyuFsF2w6zQ/0.jpg" class="afancybox">
-									<img rel="group" src="https://ortopedicosfuturo.com/uploads/catalog/images//4/z/m/large-Cojin Cervical 20407011_2.jpg" class="page_speed_1969994718 img-responsive item-image-first">
+								<a href="https://www.youtube.com/watch?v=vNKUDiA2YQE&list=RDMM3lblElYniL4&index=8" class="ifancybox">
+									<iframe width="560" height="315" src="https://www.youtube.com/embed/vNKUDiA2YQE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 								</a>
 							</div>
 						</div>
