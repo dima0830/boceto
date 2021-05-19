@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Ortopedicos Futuro</title>
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://ortopedicosfuturo.com/vendor/ortopedicos-desktop/assets/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://ortopedicosfuturo.com/vendor/ortopedicos/assets/css/jquery.fancybox.min.css" rel="stylesheet">
+  <link href="https://ortopedicosfuturo.com/vendor/ortopedicos/assets/css/slick.min.css" rel="stylesheet">
+  <link href="https://ortopedicosfuturo.com/vendor/ortopedicos/assets/css/slick-theme.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+<body>
+  <div class="box-login bckblue">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+          <img src="assets/img/logo.png" class="img-responsive logoloig">
+          <div class="bloq-login">
+            <form role="form" method="POST" action="https://ortopedicosfuturo.com/employee/login" class="formlogin">
+              <input type="hidden" name="_token" value="l05yyiiImoTxEIeAcOj8tjkyUxUojgSvEMXQuW6W">
+              <div class="form-group ">
+                <input type="text" name="login" class="form-control input-top" value="" autofocus="" required="" aria-label="Large" id="exampleInputEmail1" placeholder="Email o Identificación">
+                <input type="password" name="password" class="form-control input-bottom" aria-label="Large" id="exampleInputPassword1" placeholder="Contraseña" required="">
+              </div>
+              <div class="remember checkbox">
+                <label>
+                  <input type="checkbox" name="remember" value="1"> Recordarme </label>
+                </div>
+                <br>
+                <button type="submit" class="btn col4  btn-block">Ingresar</button>
+              </form>
+          </div>
+          <button type="button" class="link btcontra" data-toggle="modal" data-target="#olvide">
+            ¿Olvide mi contraseña?
+          </button>
+              <p class="copy">© 2021 W360</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ortopedicosfuturo.com/vendor/ortopedicos-desktop/assets/js/jquery-3.3.1.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="https://ortopedicosfuturo.com/vendor/ortopedicos/assets/js/jquery.fancybox.pack.js"></script>
+  <script src="https://ortopedicosfuturo.com/vendor/ortopedicos/assets/js/slick.min.js"></script>
+  <script src="https://ortopedicosfuturo.com/vendor/ortopedicos-desktop/assets/js/main.js"></script>
+  <script src="assets/js/main-new.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('#list').click(function(event){
+        event.preventDefault();
+        $('#tiendaaa .item').addClass('list-group-item');
+      });
+      $('#grid').click(function(event){
+        event.preventDefault();
+        $('#tiendaaa .item').removeClass('list-group-item');
+        $('#tiendaaa .item').addClass('grid-group-item');
+      });
+    });
+  </script>
+</body>
+</html>
+
+<!-- Modal -->
+<div class="modal fade" id="olvide" tabindex="-1" role="dialog" aria-labelledby="olvide">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <h2 class="titulo-detalle text-center">RECUPERACIÓN DE CONTRASEÑA</h2>
+        <div class="espac2"></div>
+        <form role="form" method="POST" action="https://ortopedicosfuturo.com/employee/login" class="formlogin">
+              <div class="form-group ">
+                <input type="text" name="login" class="form-control input-top" value="" autofocus="" required="" aria-label="Large" id="exampleInputEmail1" placeholder="Email o Identificación">
+              </div>
+                <button type="submit" class="btn col4  btn-block">Enviar</button>
+              </form>
+      </div>
+    </div>
+  </div>
+</div>

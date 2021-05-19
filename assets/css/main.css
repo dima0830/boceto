@@ -1105,7 +1105,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bc0911', end
   height: auto;
   margin: 0 auto -80px;
 }
-
 /* tiendas*/
 .box-internas-int{
   margin: 20px 0;
@@ -1127,28 +1126,23 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bc0911', end
 }
 
 /* tiendas ==========*/
-
 .btn-list {
   padding: 8px 0 20px;
   display: inline-block;
 }
-
 .btn-list a{
   color: #666666;
   margin: 0 10px;
   font-size: 16px;
 }
-
 .btn-list a i{
   font-size: 16px;
   color:#00b5fa;
   margin-right: 8px;
 }
-
 .btn-list a:hover i, .btn-list a:focus i{
   color: #5caf31;
 }
-
 .btn-list a:hover, .btn-list a:focus {
   color: #5caf31;
 }
@@ -1263,9 +1257,71 @@ color: #023fa0;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
 }
-.pimg{
+.box-login{
+  width: 100%;
+  height: 100vh;
 }
-
+.logoloig{
+  margin: 25% auto 10px;
+}
+.bloq-login {
+  width: 100%;
+  border: 1px solid #e6e6e6;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 15px auto;
+  background: rgba(0, 0, 0, 0.1);
+}
+.formlogin{
+  display: block;
+  width: 70%;
+  margin: 40px auto
+}
+.formlogin input[type=text], .formlogin input[type=password] {
+  border-radius: 8px;
+  height: 40px;
+  border: 1px solid #e6e6e6;
+  background: transparent;
+  color: #fff;
+  margin: 20px 0;
+}
+.formlogin input::placeholder{
+  color: #fff;
+}
+.formlogin .checkbox label{
+  color: #fff;
+}
+.formlogin button{
+  width: 60%;
+  margin: 0 auto;
+  border: 0;
+  color: #fff;
+}
+.formlogin button:hover{
+  color: #fff;
+  background: #bc0911; /* Old browsers */
+background: -moz-linear-gradient(left,  #bc0911 1%, #e0a227 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  #bc0911 1%,#e0a227 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  #bc0911 1%,#e0a227 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bc0911', endColorstr='#e0a227',GradientType=1 ); /* IE6-9 */
+}
+.btcontra {
+  color: #fff;
+  text-align: center;
+  background: transparent;
+  border: 0;
+  margin: 0 auto;
+  display: block;
+}
+.copy {
+  position: fixed;
+  bottom: 10px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  left: 47%;
+  color:#fff;
+}
 /* Estilos movil ====================================================estilos movil=================estilos movil=========estilos movil=========================*/
 
 @media (min-width: 768px) and (max-width: 991px) {
