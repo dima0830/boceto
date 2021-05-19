@@ -1183,7 +1183,7 @@ color: #023fa0;
   color: #999999;
 }
 .text-alto {
-  color: #999999;
+  color: #7a869c;
     display: block;
     margin: 1px;
     max-height: 20px;
@@ -1193,7 +1193,7 @@ color: #023fa0;
 }
 .list-group-item-text .ver{
   display: none;
-  color: #999999;
+  color: #7a869c;
 }
 /* Lista======*/
 .item{
@@ -1237,87 +1237,33 @@ color: #023fa0;
 .item.list-group-item .cont{
   padding: 10px;
 }
-
-.paginat{
-
-  float: right;
-
-  margin: 0;
-
-  padding: 0;
-
-}
-
-.paginat li a{
-
-  background-color: #E5E5E5;
-
-  margin: -5px 1px 0;
-
-  padding: 15px 20px;
-
-  color: #333333;
-
-}
-
-.paginat li a:focus, .paginat li a:hover{
-
-  background-color: #f0047f;
-
-  color: #fff;
-
-}
-
-.paginat li .izq{
-
-  border-top-left-radius: 0px !important;
-
-  border-bottom-left-radius: 0px !important;
-
-}
-
-.paginat li .der{
-
-  border-top-right-radius: 0px !important;
-
-  border-bottom-right-radius:  0px !important;
-
-}
-
-
-
 .box-tienda2 {
-
   margin: 30px 0;
-
 }
-
 .direct{
-
   text-align: center;
-
-  font-size: 25px;
-
+  font-size: 16px;
   background-color: #0AA0C6;
-
-  padding: 5px 0;
-
+  padding: 10px;
   color: #fff;
-
+  border-radius: 10px;
 }
-
+.direct p{
+  margin-top: 15px;
+}
 .text-tienda{
-
-  font-family: 'Myriad Pro Regular';
-
-  background-color: #E5E5E5;
-
-  padding: 22px ;
-
-  color: #001277;
-
+  background-color: #fff;
+  padding: 19px ;
+  color: #7a869c;
   margin-bottom: 20px;
-
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.box-tienda2 img{
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.pimg{
 }
 
 /* Estilos movil ====================================================estilos movil=================estilos movil=========estilos movil=========================*/
