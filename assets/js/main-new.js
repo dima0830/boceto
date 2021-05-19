@@ -6,21 +6,13 @@ $(document).ready(function(){
     $(this).toggleClass("active");
   });
 
-// boton + y - 
-$('.btn-plus, .btn-minus').on('click', function(e) {
-  const isNegative = $(e.target).closest('.btn-minus').is('.btn-minus');
-  const input = $(e.target).closest('.input-group').find('input');
-  if (input.is('input')) {
-    input[0][isNegative ? 'stepDown' : 'stepUp']()
-  }
-})
-});//fin
 
+
+});//fin
 
 // microfono
 const searchForm = document.querySelector("#search-form");
 const searchFormInput = searchForm.querySelector("input"); // <=> document.querySelector("#search-form input");
-const info = document.querySelector(".info");
 
 // The speech recognition interface lives on the browser’s window object
 const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition; // if none exists -> undefined
@@ -93,58 +85,17 @@ if(SpeechRecognition) {
     // }, 500);
   }
   
-  info.textContent = 'Voice Commands: "stop recording", "reset input", "go"';
   
 }
 else {
   console.log("Your Browser does not support speech Recognition");
   info.textContent = "Your Browser does not support Speech Recognition";
 }
-// fin microfono
 
 
 
-(function() {
 
-  window.inputNumber = function(el) {
 
-    var min = el.attr('min') || false;
-    var max = el.attr('max') || false;
-
-    var els = {};
-
-    els.dec = el.prev();
-    els.inc = el.next();
-
-    el.each(function() {
-      init($(this));
-    });
-
-    function init(el) {
-
-      els.dec.on('click', decrement);
-      els.inc.on('click', increment);
-
-      function decrement() {
-        var value = el[0].value;
-        value--;
-        if(!min || value >= min) {
-          el[0].value = value;
-        }
-      }
-
-      function increment() {
-        var value = el[0].value;
-        value++;
-        if(!max || value <= max) {
-          el[0].value = value++;
-        }
-      }
-    }
-  }
-})();
-
-inputNumber($('.input-number'));
 
 
 
