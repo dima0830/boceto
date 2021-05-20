@@ -6,7 +6,34 @@ $(document).ready(function(){
     $(this).toggleClass("active");
   });
 
+$('.btn-plus, .btn-minus').on('click', function(e) {
+  e.preventDefault()
+  const isNegative = $(e.target).closest('.btn-minus').is('.btn-minus');
+  const input = $(e.target).closest('.sumar').find('input');
+  if (input.is('input')) {
+    input[0][isNegative ? 'stepDown' : 'stepUp']()
+  }
+})
 
+// agrregar lo más visto
+$('.btn-plus2, .btn-minus2').on('click', function(e) {
+  e.preventDefault()
+  const isNegative = $(e.target).closest('.btn-minus2').is('.btn-minus2');
+  const input = $(e.target).closest('.sumar2').find('input');
+  if (input.is('input')) {
+    input[0][isNegative ? 'stepDown' : 'stepUp']()
+  }
+})
+
+// agrregar detalla
+$('.btn-plus3, .btn-minus3').on('click', function(e) {
+  e.preventDefault()
+  const isNegative = $(e.target).closest('.btn-minus3').is('.btn-minus3');
+  const input = $(e.target).closest('.sumar-deta').find('input');
+  if (input.is('input')) {
+    input[0][isNegative ? 'stepDown' : 'stepUp']()
+  }
+})
 
 });//fin
 
