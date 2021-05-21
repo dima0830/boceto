@@ -1,4 +1,11 @@
 $(document).ready(function(){
+  $('#myAffix').affix({
+  offset: {
+    top: 200,
+    bottom: 100
+  }
+})
+  
   $('#header').prepend('<div id="menu-icon"><span class="first"></span><span class="second"></span><span class="third"></span></div>');
 
   $("#menu-icon").on("click", function(){
