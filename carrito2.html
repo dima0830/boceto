@@ -13,7 +13,7 @@
   <link href="assets/css/main.css" rel="stylesheet">
 </head>
 <body>
- <div class="menusup">
+  <div class="menusup">
     <div class="container-fluid sinespa">
       <div class="row sinespa">
         <div class="col-sm-3 text-center">
@@ -80,7 +80,7 @@
             <hr>
             <li class="row">
               <img src="">
-              <ul class="mega-col">
+              <ul class=" mega-col">
                 <li>
                   <a href="#">Suplementos Dietarios <span class="col1 line"></span></a>
                 </li>
@@ -343,7 +343,6 @@
   </nav>
 </div>
 <!-- Fin cabezote -->
-
 <div class="box-gris-interna">
   <div class="container-container">
     <ul class="list-mapa-int">
@@ -354,427 +353,342 @@
       <li><a href="#"> COJÍN CERVICAL DESKNZA®</a></li>
     </ul>
     <div class="box-cont-interna">
-      <div class="row">
-        <div class="col-sm-6">
-            <div class="row load-images">
-              <div class="col-xs-3 items-images">
-                <a href="https://www.youtube.com/embed/vNKUDiA2YQE" class="ifancybox">
-                  <img alt="COJÍN CERVICAL DESKNZA®" src="https://ortopedicosfuturo.com/uploads/catalog/images//c/k/2/large-Cojin Cervical 20407011.png" class="page_speed_672284019 img-responsive">
-                </a>
-                <a href="https://ortopedicosfuturo.com/uploads/catalog/images//c/k/2/large-Cojin Cervical 20407011.png" rel="group" class="afancybox">
-                  <img alt="COJÍN CERVICAL DESKNZA®" src="https://ortopedicosfuturo.com/uploads/catalog/images//c/k/2/large-Cojin Cervical 20407011.png" class="page_speed_672284019 img-responsive">
-                </a>
-                <a href="https://ortopedicosfuturo.com/uploads/catalog/images//t/z/2/large-Cojin Cervical 20407011_1.png" rel="group" class="afancybox">
-                  <img alt="COJÍN CERVICAL DESKNZA®" src="https://ortopedicosfuturo.com/uploads/catalog/images//t/z/2/large-Cojin Cervical 20407011_1.png" class="page_speed_672284019 img-responsive">
-                </a>
+      <form id="formID" method="post" class="form-cart" action="https://ortopedicosfuturo.com/order">
+        <input type="hidden" name="_token" value="h23F3amSTVKxOdRQ6R0JmaMuwIiNuvB5GSkJxu1n">
+        <div class="row box checkout_form">
+          <div class="col-md-6 register_block">
+            <div class="row">
+              <div class="col-md-12">
+                <h3 class="subintconv">Información de Personal</h3>
               </div>
-              <div class="col-xs-8 col-xs-offset-1">
-                <a href="https://www.youtube.com/watch?v=vNKUDiA2YQE&list=RDMM3lblElYniL4&index=8" class="ifancybox">
-                  <iframe width="100%" height="315" src="https://www.youtube.com/embed/vNKUDiA2YQE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </a>
+              <input type="hidden" name="billing[id]" value="5480">
+              <div class="form-group col-md-6">
+                <input type="text" name="billing[first_name]" readonly="" placeholder="*Nombres" id="input-billing-firstname" class="f validate[required] data-personal">
               </div>
-            </div>
-          </div>
-          <div class="col-md-5 col-md-offset-1 col-sm-6">
-            <div class="bckblue bton">30%</div>
-            <h2 class="titulo-detalle">LUBRIDERM® UV LOCIÓN 200ML</h2>
-            <p class="ref"><span>Ref:</span>20801089</p>
-            <div class="precio-detalle">
-              <span class="p-online">*Precio Online</span>
-              <h2 class="ahora-detalle">$13,900</h2>
-              <p class="antes-detalle"><s>$ 17,400</s></p>
-            </div>
-            <div class="box-detalle-info">
-              <form class="form-detalle form-horizontal">
-                <div class="form-group">
-                  <label for="inputEmail3" class="col-md-2 col-sm-4 control-label">Talla</label>
-                  <div class="col-sm-6">
-                    <select class="form-control numer2 variation_select validate[required]" data-atribute-value="8" data-required-value="0" data-required="#variation-0" id="variation-8">
-                      <option value=""> -- Talla-- </option>
-                      <option value="60">SMALL </option>
-                      <option value="62">MEDIUM </option>
-                      <option value="63">LARGE </option>
-                      <option value="64">XLARGE</option>
+              <div class="form-group col-md-6">
+                <input type="text" name="billing[last_name]" readonly="" placeholder="*Apellidos" id="input-billing-lastname" class="f validate[required] data-personal">
+              </div>
+              <div class="col-md-12">
+                <h3 class="subintconv">Direccion Personal y/o Envío</h3>
+              </div>
+              <div id="payment-address-new">
+                <div class="form-group col-md-12">
+                    <input type="text" name="billing[address1]" placeholder="*Dirección Principal" id="input-billing-address-1" class="f validate[required] data-personal">
+                  </div>
+                  <input id="country_id" type="hidden" name="billing[country_id]" data-name="country_id" class="billing-country f billing tax-calculation data-personal" value="149">
+                  <div class="form-group col-md-6">
+                    <select id="departament_id" name="billing[departament_id]" data-name="departament_id" class="billing-departament f billing tax-calculation validate[required] data-personal">
+                      <option selected="" value="">-- *Departamento --</option>
+                      <option value="1">ANTIOQUIA</option>
+                      <option value="2">ATLÁNTICO</option>
+                      <option value="3">BOGOTÁ, D.C.</option>
+                      <option value="4">BOLÍVAR</option>
+                      <option value="5">BOYACÁ</option>
+                      <option value="6">CALDAS</option>
+                      <option value="7">CAQUETÁ</option>
+                      <option value="8">CAUCA</option>
+                      <option value="9">CESAR</option>
+                      <option value="10">CÓRDOBA</option>
+                      <option value="11">CUNDINAMARCA</option>
+                      <option value="12">CHOCÓ</option>
+                      <option value="13">HUILA</option>
+                      <option value="14">LA GUAJIRA</option>
+                      <option value="15">MAGDALENA</option>
+                      <option value="16">META</option>
+                      <option value="17">NARIÑO</option>
+                      <option value="18">NORTE DE SANTANDER</option>
+                      <option value="19">QUINDIO</option>
+                      <option value="20">RISARALDA</option>
+                      <option value="21">SANTANDER</option>
+                      <option value="22">SUCRE</option>
+                      <option value="23">TOLIMA</option>
+                      <option value="24">VALLE DEL CAUCA</option>
+                      <option value="25">ARAUCA</option>
+                      <option value="26">CASANARE</option>
+                      <option value="27">PUTUMAYO</option>
+                      <option value="28">ARCHIPIÉLAGO DE SAN ANDRÉS, PROVIDENCIA Y SANTA CATALINA</option>
+                      <option value="29">AMAZONAS</option>
+                      <option value="30">GUAINÍA</option>
+                      <option value="31">GUAVIARE</option>
+                      <option value="32">VAUPÉS</option>
+                      <option value="33">VICHADA</option>
                     </select>
                   </div>
-                </div>
-                <div class="form-group">
-                  <label for="inputEmail3" class="col-md-2 col-sm-4 control-label">Color</label>
-                  <div class="col-sm-6">
-                    <select class="form-control numer2 variation_select validate[required]" data-atribute-value="9" data-required-value="8" data-required="#variation-8" id="variation-9">
-                      <option value=""> -- Color-- </option>
+                  <div class="form-group col-md-6">
+                    <select name="billing[city_id]" data-name="city_id" class="billing-city f billing tax-calculation validate[required] data-personal">
+                      <option selected="" value="">-- * Ciudad --</option>
+                      <option  value="687">VILLAVICENCIO</option>
+                      <option value="688">ACACÍAS</option>
+                      <option value="689">BARRANCA DE UPÍA</option>
+                      <option value="690">CABUYARO</option>
+                      <option value="691">CASTILLA LA NUEVA</option>
+                      <option value="692">SAN LUIS DE CUBARRAL</option>
+                      <option value="693">CUMARAL</option>
+                      <option value="694">EL CALVARIO</option>
+                      <option value="695">EL CASTILLO</option>
+                      <option value="696">EL DORADO</option>
+                      <option value="697">FUENTE DE ORO</option>
+                      <option value="698">GRANADA</option>
+                      <option value="699">GUAMAL</option>
+                      <option value="700">MAPIRIPÁN</option>
+                      <option value="701">MESETAS</option>
+                      <option value="702">LA MACARENA</option>
+                      <option value="703">URIBE</option>
+                      <option value="704">LEJANÍAS</option>
+                      <option value="705">PUERTO CONCORDIA</option>
+                      <option value="706">PUERTO GAITÁN</option>
+                      <option value="707">PUERTO LÓPEZ</option>
+                      <option value="708">PUERTO LLERAS</option>
+                      <option value="709">PUERTO RICO</option>
+                      <option value="710">RESTREPO</option>
+                      <option value="711">SAN CARLOS DE GUAROA</option>
+                      <option value="712">SAN JUAN DE ARAMA</option>
+                      <option value="713">SAN JUANITO</option>
+                      <option value="714">SAN MARTÍN</option>
+                      <option value="715">VISTAHERMOSA</option>
                     </select>
+                  </div>
+                   <div class="form-group col-md-6">
+                    <input type="text" name="shipping[phone]" placeholder="*Teléfono" id="input-shipping-phone" class="f validate[required]">
+                  </div>
+                  <div class="form-group col-md-12">
+                    <label>
+                      <input type="checkbox" name="use_different_shipping_address" id="use_different_shipping_address" value="1">&nbsp;Usar una dirección diferente para el envio 
+                    </label>
+                  </div>
+                </div>
+                <div class="different-shipping-form page_speed_1620022781" style="">
+                  <input type="hidden" name="shipping[id]" value="5481">
+                  <div class="form-group col-md-6">
+                    <input type="text" name="shipping[first_name]" placeholder="*Nombres" id="input-shipping-firstname" class="f validate[required]">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <input type="text" name="shipping[last_name]" placeholder="*Apellidos" id="input-shipping-lastname" class="f validate[required]">
+                  </div>
+                  <div class="form-group col-md-12">
+                    <input type="text" name="shipping[address1]" placeholder="*Dirección Principal" id="input-shipping-address-1" class="f validate[required]">
+                  </div>
+                  <div class="form-group col-md-12">
+   
+                    <input type="text" name="shipping[address2]" value="" placeholder="*Dirección Secundaria" id="input-shipping-address-2" class="f ">
+                  </div>
+                  <input id="country_id" type="hidden" name="shipping[country_id]" data-name="country_id" class="shipping-country f shipping tax-calculation " value="149">
+                  <div class="form-group col-md-6">
+
+                    <select id="departament_id" name="shipping[departament_id]" data-name="departament_id" class="shipping-departament f shipping tax-calculation validate[required]">
+                      <option selected="" value=""> Departamento</option>
+                      <option value="1">ANTIOQUIA</option>
+                      <option value="2">ATLÁNTICO</option>
+                      <option value="3">BOGOTÁ, D.C.</option>
+                      <option value="4">BOLÍVAR</option>
+                      <option value="5">BOYACÁ</option>
+                      <option value="6">CALDAS</option>
+                      <option value="7">CAQUETÁ</option>
+                      <option value="8">CAUCA</option>
+                      <option value="9">CESAR</option>
+                      <option value="10">CÓRDOBA</option>
+                      <option value="11">CUNDINAMARCA</option>
+                      <option value="12">CHOCÓ</option>
+                      <option value="13">HUILA</option>
+                      <option value="14">LA GUAJIRA</option>
+                      <option value="15">MAGDALENA</option>
+                      <option value="16">META</option>
+                      <option value="17">NARIÑO</option>
+                      <option value="18">NORTE DE SANTANDER</option>
+                      <option value="19">QUINDIO</option>
+                      <option value="20">RISARALDA</option>
+                      <option value="21">SANTANDER</option>
+                      <option value="22">SUCRE</option>
+                      <option value="23">TOLIMA</option>
+                      <option value="24">VALLE DEL CAUCA</option>
+                      <option value="25">ARAUCA</option>
+                      <option value="26">CASANARE</option>
+                      <option value="27">PUTUMAYO</option>
+                      <option value="28">ARCHIPIÉLAGO DE SAN ANDRÉS, PROVIDENCIA Y SANTA CATALINA</option>
+                      <option value="29">AMAZONAS</option>
+                      <option value="30">GUAINÍA</option>
+                      <option value="31">GUAVIARE</option>
+                      <option value="32">VAUPÉS</option>
+                      <option value="33">VICHADA</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <select name="shipping[city_id]" data-name="city_id" class="shipping-city f shipping tax-calculation validate[required]">
+                      <option selected="" value="">*Ciudad</option>
+                      <option value="687">VILLAVICENCIO</option>
+                      <option value="688">ACACÍAS</option>
+                      <option value="689">BARRANCA DE UPÍA</option>
+                      <option value="690">CABUYARO</option>
+                      <option value="691">CASTILLA LA NUEVA</option>
+                      <option value="692">SAN LUIS DE CUBARRAL</option>
+                      <option value="693">CUMARAL</option>
+                      <option value="694">EL CALVARIO</option>
+                      <option value="695">EL CASTILLO</option>
+                      <option value="696">EL DORADO</option>
+                      <option value="697">FUENTE DE ORO</option>
+                      <option value="698">GRANADA</option>
+                      <option value="699">GUAMAL</option>
+                      <option value="700">MAPIRIPÁN</option>
+                      <option value="701">MESETAS</option>
+                      <option value="702">LA MACARENA</option>
+                      <option value="703">URIBE</option>
+                      <option value="704">LEJANÍAS</option>
+                      <option value="705">PUERTO CONCORDIA</option>
+                      <option value="706">PUERTO GAITÁN</option>
+                      <option value="707">PUERTO LÓPEZ</option>
+                      <option value="708">PUERTO LLERAS</option>
+                      <option value="709">PUERTO RICO</option>
+                      <option value="710">RESTREPO</option>
+                      <option value="711">SAN CARLOS DE GUAROA</option>
+                      <option value="712">SAN JUAN DE ARAMA</option>
+                      <option value="713">SAN JUANITO</option>
+                      <option value="714">SAN MARTÍN</option>
+                      <option value="715">VISTAHERMOSA</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <input type="text" name="shipping[phone]" placeholder="*Teléfono" id="input-shipping-phone" class="f validate[required]">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class=""></div>
+              <h3 class="subintconv"> Opciones de Envio</h3>
+              <div class="shipping-method">
+                <p>Porfavor seleccione un metodo de envio para este pedido.</p>
+                <div class="shipping_servientrega input-group ">
+                  <div class="radio">
+                    <label>
+                      <input checked="checked" type="radio" name="shipping_option" class="shipping_option_radio validate[required]" data-title="Valor de Envio" data-cost="0" id="Servientrega" value="Servientrega">
+                      <img width="100px;" class="responsive" src="assets/img/mensajeria.jpg">
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="your_order">
+                <h3 class="subintconv">Carrito de Compra</h3>
+                <p>Detalles de los productos a comprar.</p>
+                <table id="cart_table" class="table table-bordered table-hover table-responsive tacart2">
+                  <thead>
+                    <tr>
+                      <th class="text-left">Producto</th>
+                      <th class="text-right hidden-xs">Catidad</th>
+                      <th class="text-right hidden-xs">Precio Unitario</th>
+                      <th class="text-right hidden-xs">Desc.</th>
+                      <th class="text-right">Total</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="text-left"> VITAMINA C + ZINC 
+                        <div class="small no-bodega"></div>
+                      </td>
+                      <td class="text-right hidden-xs">1</td>
+                      <td class="text-right hidden-xs">$15,900</td>
+                      <td class="text-right hidden-xs">$3,180</td>
+                      <td class="text-right"> $12,700</td>
+                    </tr>
+                    <input type="hidden" name="products[]" value="4587">
+                    <tr>
+                      <td class="text-left"> BIOCREMA NUTRIEX 200G 
+                        <div class="small no-bodega"></div>
+                      </td>
+                      <td class="text-right hidden-xs">1</td>
+                      <td class="text-right hidden-xs">$22,400</td>
+                      <td class="text-right hidden-xs">$3,360</td>
+                      <td class="text-right"> $19,050</td>
+                    </tr>
+                    <input type="hidden" name="products[]" value="5740">
+                  </tbody>
+                  <tfoot>
+                    <tr>
+                      <td colspan="4" class="text-right hidden-xs">
+                        <strong>Subtotal Antes de Iva:</strong>
+                      </td>
+                      <td colspan="1" class="text-right visible-xs">
+                        <strong>Subtotal Antes de Iva:</strong>
+                      </td>
+                      <td class="text-right sub-total" data-sub-total="32184.8739496">$32,185</td>
+                    </tr>
+                    <tr>
+                      <td colspan="4" class="text-right hidden-xs">
+                        <strong>Iva (Productos):</strong>
+                      </td>
+                      <td colspan="1" class="text-right visible-xs">
+                        <strong>Iva (Productos):</strong>
+                      </td>
+                      <td class="text-right tax-amount" data-tax-amount="6115.12605042">$6,115</td>
+                    </tr>
+                    <tr>
+                      <td colspan="4" class="text-right hidden-xs">
+                        <strong>Descuento:</strong>
+                      </td>
+                      <td colspan="1" class="text-right visible-xs">
+                        <strong>Descuento:</strong>
+                      </td>
+                      <td class="text-right discount" data-discount="6540">$6,540</td>
+                    </tr>
+                    <tr class="shipping-row">
+                      <td colspan="4" class="text-right shipping-title hidden-xs page_speed_1254984007">Valor de Envio (Iva Incluido):</td>
+                      <td colspan="1" class="text-right shipping-title visible-xs page_speed_1254984007">Valor de Envio (Iva Incluido):</td>
+                      <td class="text-right shipping-cost" data-shipping-cost="6800">$6,800</td>
+                    </tr>
+                    <tr>
+                      <td colspan="4" class="text-right hidden-xs">
+                        <strong>Total:</strong>
+                      </td>
+                      <td colspan="1" class="text-right visible-xs">
+                        <strong>Total:</strong>
+                      </td>
+                      <td class="text-right total" data-total="38550">$38,550</td>
+                    </tr>
+                  </tfoot>
+                </table>
+                <div class="payment-method">
+                  <h3 class="subintconv">Plataforma de Pago</h3>
+                  <p>Por favor seleccione una plataforma de pago.</p>
+                  <div class="form-group ">
+                    <div class="radio">
+                      <label>
+                        <input class="validate[required]" id="payu" name="payment_option" value="payu" type="radio" checked="">
+                        <img width="100px;" class="responsive" src="https://ortopedicosfuturo.com/vendor/ortopedicos/assets/img/payulatam.png">
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <br>
+                <p>
+                  <strong>Agrega comentarios a tu Orden</strong>
+                </p>
+                <p>
+                  <textarea name="comment" rows="3" ></textarea>
+                </p>
+                <div class="buttons clearfix">
+                  <div >
+                    <input type="checkbox" name="agree" value="1" class="validate[required]"> &nbsp; 
+                    Acepto 
+                    <a href="https://ortopedicosfuturo.com/page/terminos-y-condiciones" class="agree">
+                      <b>Acepto Términos y Condiciones y Habeas Data </b>
+                    </a>
                     
                   </div>
                 </div>
-                <div class="form-group">
-                  <label for="inputEmail3" class="col-md-2 col-sm-4 control-label">Lado</label>
-                  <div class="col-sm-6">
-                    <select class="form-control numer2 variation_select validate[required]" data-atribute-value="9" data-required-value="8" data-required="#variation-8" id="variation-9">
-                      <option value=""> -- Lado -- </option>
-                    </select>
-                  </div>
+                <div class="col-md-4 col-sm-offset-8">
+                  <input type="submit" class="btn col4 bton-cart2 btn-block" data-loading-text="Loading..." id="place-order-button" onclick="javascript = ''" value="Realizar Pago">
                 </div>
-                <div class="form-group">
-                  <label for="inputEmail3" class="col-md-2 col-sm-4 control-label">Cantidad</label>
-                  <div class="col-sm-6">
-                    <div class="sumar-deta">
-                    <div class="number-input-home2 ">
-                      <button class="btn-minus3">
-                        -
-                      </button>
-                      <input class="quantity2" min="0" name="quantity" value="1" type="number">
-                      <button class="btn-plus3">
-                        +
-                      </button>
-                    </div>
-                  </div>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <div class="col-xs-7 col-lg-6">
-                    <button type="submit" class="btn bckblue boton btn-lg" style="border:none;">
-                      <span class="of-cart"></span> Añadir al carrito
-                    </button>
-                  </div>
-                  <div class="col-xs-2  col-lg-2 sinespa">
-                    <a title="Añadir a Lista de Deseos" href="https://ortopedicosfuturo.com/wishlist/add/3980" class="cora">
-                      <div class="circle-heard">
-                        <span class="of-heard"></span>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-              </form>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-       <div class="box-cont-interna">
-        <h2 class="tlistcaract"> Características</h2>
-        <ul class="descrip"><li><p>IMPORTANTE: Color llegan según disponibilidad</p><p>* Características:</p><p>• Cojín en forma de U, para la zona del cuello ideal para viajar, dormir, leer, ver televisión, descansar y procesos de recuperación de la zona del cuello o cabeza, brindando una postura cómoda y reduciendo aparición de dolores de cuello.<br>• Su versátil diseño permite que con abrir un cierre se convierte en una pequeña almohada para ubicarla en la zona lumbar, en la cabeza o entre las piernas.&nbsp;<br>• Además es un producto que ayuda a pacientes con artrosis/artritis o con problemas cervicales.&nbsp;<br>• Aliena el cuello con el resto del cuerpo.<br>• Reduce estrés y tensión muscular.<br>• Facilita la relajación de músculos del cuello y hombros.<br>• Cojín ergonómico que disminuye la aparición de espasmos en el cuello, los hombros y la espalda alta.<br>• Dimensiones: &nbsp;Ancho: 30 cm / Alto: 28 cm / Profundidad: 10 cm<br>Material:<br>- Tela: Lycra / Spandex&nbsp;<br>- Interior: EPS Microperlas<br>• Color: &nbsp;Negro / Azul / Gris</p></li></ul>
-    </div>
-    <hr class="blue-hr">
+        </form>
     </div>
   </div>
+   <hr class="blue-hr">
+</div>
 
-  <div class="container">
-    <br>
-  <h2 class="titulo-home">Productos relacionados:</h2>
-  <br>
-  <div id="tienda3" class="carousel slide" data-ride="carousel">
-    <div class="carousel-inner">
-      <div class="item active">
-        <br>
-        <div class="row" style="margin: 0;">
-          <div class="col-xs-6 col-sm-3 margipa">
-            <span class="porcent-product bckblue"> 10%</span>
-            <div class="box-blue-product bckblue">
-              <div class="box-conte-product">
-                <div class="box-img-product">
-                  <img alt="VITAMINA E + SELENIO" class="img-responsive" src="https://ortopedicosfuturo.com/uploads/catalog/images//t/2/f/small-Vitamin_E_1000IU_Selenium_100.jpg">
-                </div>
-                <div class="line-green col4"></div>
-                <div class="info-product">
-                  <h2 class="nombre-product">VITAMINA C <br>HEALTHY AMERICA®</h2>
-                  <p class="descrip-product">Calcetín Rodilla Colors Casual/Ocio</p>
-                  <span class="p-online text-center">*Precio Online</span>
-                  <div class="row">
-                    <div class="col-xs-6 align-self-center">
-                      <div class="antes">
-                        <h3 class="antes-product">antes</h3>
-                        <p class="prec-antes-prodyct"><s>$ 260,300</s></p>
-                      </div>
-                    </div>
-                    <div class="col-xs-6 align-self-center line-bb">
-                      <div class="ahora">
-                        <h3 class="ahora-product">Ahora</h3>
-                        <p class="prec-ahora-prodyct">$ 118,100</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="plus">
-                <p>AGREGAR</p>
-                <div class="sumar"></div>
-                <span class="input-number-decrement">–</span>
-                <input class="input-number" type="text" value="1" min="0">
-                <span class="input-number-increment">+</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-xs-6 col-sm-3 margipa">
-            <span class="porcent-product bckblue"> 10%</span>
-            <div class="box-blue-product bckblue">
-              <div class="box-conte-product">
-                <div class="box-img-product">
-                  <img alt="VITAMINA E + SELENIO" class="img-responsive" src="https://ortopedicosfuturo.com/uploads/catalog/images//t/2/f/small-Vitamin_E_1000IU_Selenium_100.jpg">
-                </div>
-                <div class="line-green col4"></div>
-                <div class="info-product">
-                  <h2 class="nombre-product">VITAMINA C <br>HEALTHY AMERICA®</h2>
-                  <p class="descrip-product">Calcetín Rodilla Colors Casual/Ocio</p>
-                  <span class="p-online text-center">*Precio Online</span>
-                  <div class="row">
-                    <div class="col-xs-6 align-self-center">
-                      <div class="antes">
-                        <h3 class="antes-product">antes</h3>
-                        <p class="prec-antes-prodyct"><s>$ 260,300</s></p>
-                      </div>
-                    </div>
-                    <div class="col-xs-6 align-self-center line-bb">
-                      <div class="ahora">
-                        <h3 class="ahora-product">Ahora</h3>
-                        <p class="prec-ahora-prodyct">$ 118,100</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="plus">
-                <p>AGREGAR</p>
-                <div class="sumar"></div>
-                <span class="input-number-decrement">–</span>
-                <input class="input-number" type="text" value="1" min="0">
-                <span class="input-number-increment">+</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-xs-6 col-sm-3 margipa">
-            <span class="porcent-product bckblue"> 10%</span>
-            <div class="box-blue-product bckblue">
-              <div class="box-conte-product">
-                <div class="box-img-product">
-                  <img alt="VITAMINA E + SELENIO" class="img-responsive" src="https://ortopedicosfuturo.com/uploads/catalog/images//t/2/f/small-Vitamin_E_1000IU_Selenium_100.jpg">
-                </div>
-                <div class="line-green col4"></div>
-                <div class="info-product">
-                  <h2 class="nombre-product">VITAMINA C <br>HEALTHY AMERICA®</h2>
-                  <p class="descrip-product">Calcetín Rodilla Colors Casual/Ocio</p>
-                  <span class="p-online text-center">*Precio Online</span>
-                  <div class="row">
-                    <div class="col-xs-6 align-self-center">
-                      <div class="antes">
-                        <h3 class="antes-product">antes</h3>
-                        <p class="prec-antes-prodyct"><s>$ 260,300</s></p>
-                      </div>
-                    </div>
-                    <div class="col-xs-6 align-self-center line-bb">
-                      <div class="ahora">
-                        <h3 class="ahora-product">Ahora</h3>
-                        <p class="prec-ahora-prodyct">$ 118,100</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="plus">
-                <p>AGREGAR</p>
-                <div class="sumar"></div>
-                <span class="input-number-decrement">–</span>
-                <input class="input-number" type="text" value="1" min="0">
-                <span class="input-number-increment">+</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-xs-6 col-sm-3 margipa">
-            <span class="porcent-product bckblue"> 10%</span>
-            <div class="box-blue-product bckblue">
-              <div class="box-conte-product">
-                <div class="box-img-product">
-                  <img alt="VITAMINA E + SELENIO" class="img-responsive" src="https://ortopedicosfuturo.com/uploads/catalog/images//t/2/f/small-Vitamin_E_1000IU_Selenium_100.jpg">
-                </div>
-                <div class="line-green col4"></div>
-                <div class="info-product">
-                  <h2 class="nombre-product">VITAMINA C <br>HEALTHY AMERICA®</h2>
-                  <p class="descrip-product">Calcetín Rodilla Colors Casual/Ocio</p>
-                  <span class="p-online text-center">*Precio Online</span>
-                  <div class="row">
-                    <div class="col-xs-6 align-self-center">
-                      <div class="antes">
-                        <h3 class="antes-product">antes</h3>
-                        <p class="prec-antes-prodyct"><s>$ 260,300</s></p>
-                      </div>
-                    </div>
-                    <div class="col-xs-6 align-self-center line-bb">
-                      <div class="ahora">
-                        <h3 class="ahora-product">Ahora</h3>
-                        <p class="prec-ahora-prodyct">$ 118,100</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="plus">
-                <p>AGREGAR</p>
-                <div class="sumar"></div>
-                <span class="input-number-decrement">–</span>
-                <input class="input-number" type="text" value="1" min="0">
-                <span class="input-number-increment">+</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="item">
-        <br>
-        <div class="row">
-          <div class="col-xs-6 col-sm-3 margipa">
-            <span class="porcent-product bckblue"> 10%</span>
-            <div class="box-blue-product bckblue">
-              <div class="box-conte-product">
-                <div class="box-img-product">
-                  <img alt="VITAMINA E + SELENIO" class="img-responsive" src="https://ortopedicosfuturo.com/uploads/catalog/images//t/2/f/small-Vitamin_E_1000IU_Selenium_100.jpg">
-                </div>
-                <div class="line-green col4"></div>
-                <div class="info-product">
-                  <h2 class="nombre-product">VITAMINA C <br>HEALTHY AMERICA®</h2>
-                  <p class="descrip-product">Calcetín Rodilla Colors Casual/Ocio</p>
-                  <span class="p-online text-center">*Precio Online</span>
-                  <div class="row">
-                    <div class="col-xs-6 align-self-center">
-                      <div class="antes">
-                        <h3 class="antes-product">antes</h3>
-                        <p class="prec-antes-prodyct"><s>$ 260,300</s></p>
-                      </div>
-                    </div>
-                    <div class="col-xs-6 align-self-center line-bb">
-                      <div class="ahora">
-                        <h3 class="ahora-product">Ahora</h3>
-                        <p class="prec-ahora-prodyct">$ 118,100</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="plus">
-                <p>AGREGAR</p>
-                <div class="sumar"></div>
-                <span class="input-number-decrement">–</span>
-                <input class="input-number" type="text" value="1" min="0">
-                <span class="input-number-increment">+</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-xs-6 col-sm-3 margipa">
-            <span class="porcent-product bckblue"> 10%</span>
-            <div class="box-blue-product bckblue">
-              <div class="box-conte-product">
-                <div class="box-img-product">
-                  <img alt="VITAMINA E + SELENIO" class="img-responsive" src="https://ortopedicosfuturo.com/uploads/catalog/images//t/2/f/small-Vitamin_E_1000IU_Selenium_100.jpg">
-                </div>
-                <div class="line-green col4"></div>
-                <div class="info-product">
-                  <h2 class="nombre-product">VITAMINA C <br>HEALTHY AMERICA®</h2>
-                  <p class="descrip-product">Calcetín Rodilla Colors Casual/Ocio</p>
-                  <span class="p-online text-center">*Precio Online</span>
-                  <div class="row">
-                    <div class="col-xs-6 align-self-center">
-                      <div class="antes">
-                        <h3 class="antes-product">antes</h3>
-                        <p class="prec-antes-prodyct"><s>$ 260,300</s></p>
-                      </div>
-                    </div>
-                    <div class="col-xs-6 align-self-center line-bb">
-                      <div class="ahora">
-                        <h3 class="ahora-product">Ahora</h3>
-                        <p class="prec-ahora-prodyct">$ 118,100</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="plus">
-                <p>AGREGAR</p>
-                <div class="sumar"></div>
-                <span class="input-number-decrement">–</span>
-                <input class="input-number" type="text" value="1" min="0">
-                <span class="input-number-increment">+</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-xs-6 col-sm-3 margipa">
-            <span class="porcent-product bckblue"> 10%</span>
-            <div class="box-blue-product bckblue">
-              <div class="box-conte-product">
-                <div class="box-img-product">
-                  <img alt="VITAMINA E + SELENIO" class="img-responsive" src="https://ortopedicosfuturo.com/uploads/catalog/images//t/2/f/small-Vitamin_E_1000IU_Selenium_100.jpg">
-                </div>
-                <div class="line-green col4"></div>
-                <div class="info-product">
-                  <h2 class="nombre-product">VITAMINA C <br>HEALTHY AMERICA®</h2>
-                  <p class="descrip-product">Calcetín Rodilla Colors Casual/Ocio</p>
-                  <span class="p-online text-center">*Precio Online</span>
-                  <div class="row">
-                    <div class="col-xs-6 align-self-center">
-                      <div class="antes">
-                        <h3 class="antes-product">antes</h3>
-                        <p class="prec-antes-prodyct"><s>$ 260,300</s></p>
-                      </div>
-                    </div>
-                    <div class="col-xs-6 align-self-center line-bb">
-                      <div class="ahora">
-                        <h3 class="ahora-product">Ahora</h3>
-                        <p class="prec-ahora-prodyct">$ 118,100</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="plus">
-                <p>AGREGAR</p>
-                <div class="sumar"></div>
-                <span class="input-number-decrement">–</span>
-                <input class="input-number" type="text" value="1" min="0">
-                <span class="input-number-increment">+</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-xs-6 col-sm-3 margipa">
-            <span class="porcent-product bckblue"> 10%</span>
-            <div class="box-blue-product bckblue">
-              <div class="box-conte-product">
-                <div class="box-img-product">
-                  <img alt="VITAMINA E + SELENIO" class="img-responsive" src="https://ortopedicosfuturo.com/uploads/catalog/images//t/2/f/small-Vitamin_E_1000IU_Selenium_100.jpg">
-                </div>
-                <div class="line-green col4"></div>
-                <div class="info-product">
-                  <h2 class="nombre-product">VITAMINA C <br>HEALTHY AMERICA®</h2>
-                  <p class="descrip-product">Calcetín Rodilla Colors Casual/Ocio</p>
-                  <span class="p-online text-center">*Precio Online</span>
-                  <div class="row">
-                    <div class="col-xs-6 align-self-center">
-                      <div class="antes">
-                        <h3 class="antes-product">antes</h3>
-                        <p class="prec-antes-prodyct"><s>$ 260,300</s></p>
-                      </div>
-                    </div>
-                    <div class="col-xs-6 align-self-center line-bb">
-                      <div class="ahora">
-                        <h3 class="ahora-product">Ahora</h3>
-                        <p class="prec-ahora-prodyct">$ 118,100</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="plus">
-                <p>AGREGAR</p>
-                <div class="sumar"></div>
-                <span class="input-number-decrement">–</span>
-                <input class="input-number" type="text" value="1" min="0">
-                <span class="input-number-increment">+</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
- 
 
-  <h2 class="titulo-home">MARCAS</h2>
+<div class="container">
+<h2 class="titulo-home">MARCAS</h2>
   <br>
   <div id="marcas" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner">

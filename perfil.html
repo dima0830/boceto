@@ -358,261 +358,428 @@
       </div>
     </div>
   </div>
-  <div class="container"></div>
   <div class="box-cont-interna">
-    <ul class="nav nav-tabs">
-      <li class="active"><a data-toggle="tab" href="#perfil">Mi perfil</a></li>
-      <li><a data-toggle="tab" href="#list-deseos">Lista de Deseos</a></li>
-      <li><a data-toggle="tab" href="#ordenes-c">Ordenes de Compra</a></li>
-    </ul>
     <div class="row">
-      <div class="col-sm-9">
+      <div class="col-md-9">
+        <ul class="nav nav-tabs row tabs-perfil">
+          <li class="active col-sm-4 text-center"><a data-toggle="tab" href="#perfil"><i class="fa fa-user-circle" aria-hidden="true"></i>Mi perfil</a></li>
+          <li class="col-sm-4 text-center"><a data-toggle="tab" href="#list-deseos"><i class="fa fa-th-list" aria-hidden="true"></i>Lista de Deseos</a></li>
+          <li class="col-sm-4 text-center"><a data-toggle="tab" href="#ordenes-c"><i class="fa fa-file-text" aria-hidden="true"></i>Ordenes de Compra</a></li>
+        </ul>
+
         <div class="tab-content">
           <div id="perfil" class="tab-pane fade in active">
-            <div class="col-md-9">
-              <h3 class="right subintconv">Mi Perfil <span class="pull-right">
-                <a href="https://ortopedicosfuturo.com/my-account/change-password" class="collection-item"> Cambiar Contraseña</a> / <a href="https://ortopedicosfuturo.com/my-account/edit?2445">Editar</a>
-              </span>
-            </h3>
-            <div class="table-responsive">
-              <table class="table table-hover ">
-                <tbody>
-                  <tr>
-                    <th>Cedula</th>
-                    <td> 1121848010</td>
-                  </tr>
-                  <tr>
-                    <th>Nombre</th>
-                    <td> Andrea</td>
-                  </tr>
-                  <tr>
-                    <th>Apellidos</th>
-                    <td> Diaz</td>
-                  </tr>
-                  <tr>
-                    <th>Email</th>
-                    <td> dima0830@gmail.com</td>
-                  </tr>
-                  <tr>
-                    <th>Telefono</th>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <th>Celular</th>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <th>Dirección Basica</th>
-                    <td>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
+            <h3 class="right subintconv">Mi Perfil <span class="pull-right">
+              <a type="button" class="link " data-toggle="modal" data-target="#contra"> Cambiar Contraseña</a> / 
+              <a type="button" class="link " data-toggle="modal" data-target="#editar">Editar--</a>
+            </span>
+          </h3>
+
+          <div class="table-responsive">
+            <table class="table table-hover tbperfil">
+              <tbody>
+                <tr>
+                  <th>Cedula</th>
+                  <td> 1121848010</td>
+                </tr>
+                <tr>
+                  <th>Nombre</th>
+                  <td> Andrea</td>
+                </tr>
+                <tr>
+                  <th>Apellidos</th>
+                  <td> Diaz</td>
+                </tr>
+                <tr>
+                  <th>Email</th>
+                  <td> dima0830@gmail.com</td>
+                </tr>
+                <tr>
+                  <th>Telefono</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th>Celular</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th>Dirección Basica</th>
+                  <td>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
         <div id="list-deseos" class="tab-pane fade">
-          <h3>Menu 1</h3>
-          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </div>
-        <div id="ordenes-c" class="tab-pane fade">
-          <h3>Menu 2</h3>
-          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+          <h3 class="right subintconv">Mi Lista de Deseo <span class="pull-right"></span></h3>
+          <div class="table-responsive">
+            <table class="table tbperfil">
+              <thead>
+                <tr>
+                  <th>Imagen</th>
+                  <th>Titulo</th>
+                  <th>Acción</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <a href="https://ortopedicosfuturo.com/product/vitamina-c-healthy-america" class="productperfil" title="VITAMINA C HEALTHY AMERICA®">
+                      <img alt="VITAMINA C HEALTHY AMERICA®" src="https://ortopedicosfuturo.com/uploads/catalog/images//z/7/k/small-vitamin-c-500-mg-with-rose-hips-healthy-america-D_NQ_NP_606994-MCO31542371283_072019-F.jpg" class="img-responsive page_speed_1361535112">
+                    </a>
+                  </td>
+                  <td>
+                    <p>
+                      <a href="https://ortopedicosfuturo.com/product/vitamina-c-healthy-america">VITAMINA C HEALTHY AMERICA®</a></p>
+                    </td>
+                    <td>
+                      <a class="btn btn-danger" href="https://ortopedicosfuturo.com/wishlist/remove/4588">Eliminar de Lista</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a href="https://ortopedicosfuturo.com/product/cojin-cervical-desknza" class="productperfil" title="COJÍN CERVICAL DESKNZA®">
+                        <img alt="COJÍN CERVICAL DESKNZA®" src="https://ortopedicosfuturo.com/uploads/catalog/images//4/z/m/small-Cojin Cervical 20407011_2.jpg" class="img-responsive page_speed_1361535112">
+                      </a>
+                    </td>
+                    <td>
+                      <a href="https://ortopedicosfuturo.com/product/cojin-cervical-desknza">COJÍN CERVICAL DESKNZA®</a>
+                    </td>
+                    <td>
+                      <a class="btn btn-danger" href="https://ortopedicosfuturo.com/wishlist/remove/3980">Eliminar de Lista</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a href="https://ortopedicosfuturo.com/product/cojin-cervical-desknza" class="productperfil" title="COJÍN CERVICAL DESKNZA®">
+                        <img alt="COJÍN CERVICAL DESKNZA®" src="https://ortopedicosfuturo.com/uploads/catalog/images//4/z/m/small-Cojin Cervical 20407011_2.jpg" class="img-responsive page_speed_1361535112">
+                      </a>
+                    </td>
+                    <td>
+                      <a href="https://ortopedicosfuturo.com/product/cojin-cervical-desknza">COJÍN CERVICAL DESKNZA®</a>
+                    </td>
+                    <td>
+                      <a class="btn btn-danger" href="https://ortopedicosfuturo.com/wishlist/remove/3980">Eliminar de Lista</a></td></tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div id="ordenes-c" class="tab-pane fade">
+                <h3 class="right subintconv">Mi Lista de Deseo </h3>
+                <br>
+                <table class="table table-bordered table-responsive"><thead><tr><th>ID </th><th>Referencia</th><th width="150px">Metodo de Envio</th><th>Metodo de Pago</th><th>Estado</th><th>Acciones</th></tr></thead><tbody><tr><td>4065</td><td>1987598753</td><td>Servientrega</td><td>payu</td><td><spam class="alert-danger">Rechazada</spam></td><td><a class="btn" href="https://ortopedicosfuturo.com/my-account/order/4065/view">Ver Detalle</a></td></tr><tr><td>4064</td><td>3222318868</td><td>Servientrega</td><td>payu</td><td><spam class="alert-danger">Rechazada</spam></td><td><a class="btn" href="https://ortopedicosfuturo.com/my-account/order/4064/view">Ver Detalle</a></td></tr></tbody></table>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-xs-6 text-center">
+            <div class="profile-userpic page_speed_1916121808">
+              <img src="http://placehold.it/500x500" class="img-responsive" alt="">
+            </div>
+            <div class="text-center">
+              <div class="profile-usertitle-name">
+                <strong>Andrea Diaz</strong>
+              </div>
+              <ul class="nav nav-list">
+                <li>
+                  <a href="https://ortopedicosfuturo.com/my-account/change-password" class="collection-item"> Cambiar Contraseña</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <div class="col-md-3"><div class="profile-userpic page_speed_1916121808"><img src="http://placehold.it/500x500" class="img-responsive" alt=""></div><div class="text-center"><div class="profile-usertitle-name"><strong>Andrea Diaz</strong></div><ul class="nav nav-list"><li><a href="https://ortopedicosfuturo.com/my-account/change-password" class="collection-item"> Cambiar Contraseña</a></li></ul></div></div>
+
+    <div class="container">
+      <h2 class="titulo-home">MARCAS</h2>
+      <br>
+
+      <div id="marcas" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="item">
+            <div class="row">
+              <div class="col-sm-3 col-xs-6">
+                <a href="https://www.aspenmp.com/" target="_blank" class="product-">
+                  <div class="m-product">
+                    <img src="https://ortopedicosfuturo.com/uploads/mark/1554148723-1529531742-Logo-Aspen.jpg" class="img-responsive logo-list">
+                  </div>
+                </a>
+              </div>
+              <div class="col-sm-3 col-xs-6">
+                <a href="#" target="_blank" class="product-">
+                  <div class="m-product">
+                    <img src="https://ortopedicosfuturo.com/uploads/mark/1614609624-no-varix.jpg" class="img-responsive logo-list">
+                  </div>
+                </a>
+              </div>
+              <div class="col-sm-3 col-xs-6">
+                <a href="https://www.enraf-nonius.com/" target="_blank" class="product-">
+                  <div class="m-product">
+                    <img src="https://ortopedicosfuturo.com/uploads/mark/1554148604-1497374906-enraf-nonius.jpg" class="img-responsive logo-list">
+                  </div>
+                </a>
+              </div>
+              <div class="col-sm-3 col-xs-6">
+                <a href="#" target="_blank" class="product-">
+                  <div class="m-product">
+                    <img src="https://ortopedicosfuturo.com/uploads/mark/1529531758-Logo-Fisiotape.jpg" class="img-responsive logo-list">
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="item active left">
+            <div class="row">
+              <div class="col-sm-3 col-xs-6">
+                <a href="https://www.theraband.com/" target="_blank" class="product-">
+                  <div class="m-product">
+                    <img src="https://ortopedicosfuturo.com/uploads/mark/1554148546-1497375299-thera-band.jpg" class="img-responsive logo-list">
+                  </div>
+                </a>
+              </div>
+              <div class="col-sm-3 col-xs-6">
+                <a href="https://www.biofreeze.com/" target="_blank" class="product-">
+                  <div class="m-product">
+                    <img src="https://ortopedicosfuturo.com/uploads/mark/1554148801-1529531724-Logo-Biofreeze.jpg" class="img-responsive logo-list">
+                  </div>
+                </a>
+              </div>
+              <div class="col-sm-3 col-xs-6">
+                <a href="#" target="_blank" class="product-">
+                  <div class="m-product">
+                    <img src="https://ortopedicosfuturo.com/uploads/mark/1529531695-Logo-Recovery.jpg" class="img-responsive logo-list">
+                  </div>
+                </a>
+              </div>
+              <div class="col-sm-3 col-xs-6">
+                <a href="https://ortopedicosfuturo.com" target="_blank" class="product-">
+                  <div class="m-product">
+                    <img src="https://ortopedicosfuturo.com/uploads/mark/1554149021-1497374290-ortopedicos.jpg" class="img-responsive logo-list">
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="item  next left">
+            <div class="row">
+              <div class="col-sm-3 col-xs-6">
+                <a href="https://ortopedicosfuturo.com/search?_token=Lyaj8ivQoFL8WApE65OWHvqxPchl8DPmpWlGqIey&amp;q=theramart" target="_blank" class="product-">
+                  <div class="m-product">
+                    <img src="https://ortopedicosfuturo.com/uploads/mark/1616101755-theramart-logo.jpg" class="img-responsive logo-list">
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- foot ==================-->
+    <div class="pre-box-blue-foot"></div>
+    <div class="box-blue-foot">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-2">
+            <div class="menu-foot">
+              <h2 >Acerca de Nosotros</h2>
+              <ul>
+                <li><a href="#">Historia</a></li>
+                <li><a href="#">Misión</a></li>
+                <li><a href="#">Visión</a></li>
+                <li><a href="#">Trabaja con nosotros</a></li>
+                <li><a href="#">Convenios</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="menu-foot">
+              <h2 >Centro de Ayuda</h2>
+              <ul>
+                <li><a href="#">Términos y condiciones</a></li>
+                <li><a href="#">Política de Tratamiento de Datos Personales</a></li>
+                <li><a href="#">Políticas de envío</a></li>
+                <li><a href="#">PQRS</a></li>
+                <li><a href="#">Preguntas Frecuentes</a></li>
+                <li><a href="#">Política de Cambios y Garantías Retail y Mayorista</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="menu-foot">
+              <h2 >Donde Estamos</h2>
+              <ul>
+                <li><a href="#">Mapa de tiendas</a></li>
+                <li><a href="#">Contacto</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="menu-foot">
+              <h2>Nuestros Productos</h2>
+              <ul>
+                <li><a href="#">Catálogo</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="menu-foot">
+              <h2>Micro sites</h2>
+              <ul>
+                <li><a href="#">No-Varix</a></li>
+                <li><a href="#">NVX-Sport</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="info-foot">
+          <p>
+            <span>Consulta online:</span> 8:00 am - 5:00 pm   317 594 7111 <br> 
+            Ortopédicos Futuro Colombia S.A.S
+          </p>
+        </div>
+      </div><!-- container-->
+
+      <div class="container-fluid sinespa">
+        <div class="row sinespa">
+          <div class="col-md-6 col-sm-9 sinespa">
+            <div class="box-pagos-foot bckblue">
+              <p>MEDIOS DE <span>PAGO</span></p>
+              <ul>
+                <li><img src="assets/img/pse.png" class="img-responsive"></li>
+                <li><img src="assets/img/visa.png" class="img-responsive"></li>
+                <li><img src="assets/img/mastercard.png" class="img-responsive"></li>
+                <li><img src="assets/img/payu.png" class="img-responsive"></li>
+                <li><img src="assets/img/efecty.png" class="img-responsive"></li>
+              </ul>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+          <div class="col-md-2 sinespa"></div>
+          <div class="col-md-3 col-sm-3 sinespa" >
+            <ul class="redes-foot">
+              <li><a href="#"><span class="of-instagram"></span></a></li>
+              <li><a href="#"><span class="of-facebook"></span></a></li>
+              <li><a href="#"><span class="of-whatsapp"></span></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="assets/js/jquery-3.6.0-min.js" ></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="https://ortopedicosfuturo.com/vendor/ortopedicos/assets/js/jquery.fancybox.pack.js"></script>
+    <script src="https://ortopedicosfuturo.com/vendor/ortopedicos/assets/js/slick.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/main-new.js"></script>
+  </body>
+  </html>
+
+
+  <!-- Modal Cambiar contraseña-->
+  <div class="modal fade" id="contra" tabindex="-1" role="dialog" aria-labelledby="contra">
+    <div class="modal-dialog" role="document">
+      <div class="box-gris-interna">
+        <h3 class="tituint text-center">Cambiar Contraseña</h3>
+        <div class="row">
+          <div class="col-sm-8 col-sm-offset-2">
+            <form method="POST" action="https://ortopedicosfuturo.com/my-account/change-password" dummyclass="" class="form-contact">
+              <input type="hidden" name="_token" value="Lf5UAZZqG4bRICF4qT3ew5PZ2ptI8AbcOLXkeOkV">
+              <input type="hidden" name="email" value="dima0830@gmail.com">
+              <div class="form-group ">
+                <input type="password" class="form-control" id="current_password" name="current_password" placeholder="Contraseña Actual" value="">
+              </div>
+              <div class="form-group ">
+                <input type="password" class="form-control" id="password" name="password" placeholder="Nueva Conteraseña" value="">
+              </div>
+              <div class="form-group ">
+                <input type="password" class="form-control" id="password_confirmation" name="password_confirmation" placeholder="Confirmar Contraseña" value="">
+              </div>
+              <br>
+              <div class="form-group">
+                <div class="col-sm-8 col-sm-offset-2">
+                  <button type="submit" class="btn col4 bton-cart2 btn-block">Enviar</button>
+                </div>
+              </div>
+            </form>
+            <br>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
-  
-</div>
-</div>
-
-</div>
-</div>
-<div class="container">
-  <h2 class="titulo-home">MARCAS</h2>
-  <br>
-
-  <div id="marcas" class="carousel slide" data-ride="carousel">
-    <div class="carousel-inner">
-      <div class="item">
+  <!-- Modal Editar Perfil-->
+  <div class="modal fade" id="editar" tabindex="-1" role="dialog" aria-labelledby="editar">
+    <div class="modal-dialog" role="document">
+      <div class="box-gris-interna">
+        <h3 class="tituint text-center">Cambiar Contraseña</h3>
         <div class="row">
-          <div class="col-sm-3 col-xs-6">
-            <a href="https://www.aspenmp.com/" target="_blank" class="product-">
-              <div class="m-product">
-                <img src="https://ortopedicosfuturo.com/uploads/mark/1554148723-1529531742-Logo-Aspen.jpg" class="img-responsive logo-list">
-              </div>
-            </a>
-          </div>
-          <div class="col-sm-3 col-xs-6">
-            <a href="#" target="_blank" class="product-">
-              <div class="m-product">
-                <img src="https://ortopedicosfuturo.com/uploads/mark/1614609624-no-varix.jpg" class="img-responsive logo-list">
-              </div>
-            </a>
-          </div>
-          <div class="col-sm-3 col-xs-6">
-            <a href="https://www.enraf-nonius.com/" target="_blank" class="product-">
-              <div class="m-product">
-                <img src="https://ortopedicosfuturo.com/uploads/mark/1554148604-1497374906-enraf-nonius.jpg" class="img-responsive logo-list">
-              </div>
-            </a>
-          </div>
-          <div class="col-sm-3 col-xs-6">
-            <a href="#" target="_blank" class="product-">
-              <div class="m-product">
-                <img src="https://ortopedicosfuturo.com/uploads/mark/1529531758-Logo-Fisiotape.jpg" class="img-responsive logo-list">
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="item active left">
-        <div class="row">
-          <div class="col-sm-3 col-xs-6">
-            <a href="https://www.theraband.com/" target="_blank" class="product-">
-              <div class="m-product">
-                <img src="https://ortopedicosfuturo.com/uploads/mark/1554148546-1497375299-thera-band.jpg" class="img-responsive logo-list">
-              </div>
-            </a>
-          </div>
-          <div class="col-sm-3 col-xs-6">
-            <a href="https://www.biofreeze.com/" target="_blank" class="product-">
-              <div class="m-product">
-                <img src="https://ortopedicosfuturo.com/uploads/mark/1554148801-1529531724-Logo-Biofreeze.jpg" class="img-responsive logo-list">
-              </div>
-            </a>
-          </div>
-          <div class="col-sm-3 col-xs-6">
-            <a href="#" target="_blank" class="product-">
-              <div class="m-product">
-                <img src="https://ortopedicosfuturo.com/uploads/mark/1529531695-Logo-Recovery.jpg" class="img-responsive logo-list">
-              </div>
-            </a>
-          </div>
-          <div class="col-sm-3 col-xs-6">
-            <a href="https://ortopedicosfuturo.com" target="_blank" class="product-">
-              <div class="m-product">
-                <img src="https://ortopedicosfuturo.com/uploads/mark/1554149021-1497374290-ortopedicos.jpg" class="img-responsive logo-list">
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="item  next left">
-        <div class="row">
-          <div class="col-sm-3 col-xs-6">
-            <a href="https://ortopedicosfuturo.com/search?_token=Lyaj8ivQoFL8WApE65OWHvqxPchl8DPmpWlGqIey&amp;q=theramart" target="_blank" class="product-">
-              <div class="m-product">
-                <img src="https://ortopedicosfuturo.com/uploads/mark/1616101755-theramart-logo.jpg" class="img-responsive logo-list">
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+          <div class="col-xs-12">
+            <hr class="blue-hr">
+            <br>
+            <form method="POST" action="https://ortopedicosfuturo.com/my-account/edit" enctype="multipart/form-data" dummyclass="">
+              <input type="hidden" name="_token" value="Lf5UAZZqG4bRICF4qT3ew5PZ2ptI8AbcOLXkeOkV">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input id="first_name" class="form-control" type="text" value="" placeholder="Nombres" name="first_name"></div>
+                  <div class="form-group">
+                    <input id="identifier" type="identifier" class="form-control" name="identifier" value="" placeholder="Cedula" required="">
+                  </div>
+                  <div class="form-group">
+                    <input id="cell_phone" type="cell_phone" class="form-control" name="cell_phone" value="" placeholder="Celular" required="">
+                  </div>
+                  <div class="form-group">
+                    <select id="country_id" name="country_id" class="form-control">
+                      <option>*País</option>
+                      <option value="1">Bangladesh</option>
+                      <option value="2">Belgium</option>
+                      <option value="3">Burkina Faso</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <select id="city_id" name="city_id" class="form-control">
+                      <option>*Ciudad</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="image_path">Imagen de Perfil</label>
+                    <input type="file" id="image_path" name="image_path" placeholder="Imagen de Perfil" value="">
+                    <a href="https://ortopedicosfuturo.com/uploads"></a>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input id="last_name" type="text" class="form-control" value="" placeholder="Apellidos" name="last_name">
+                  </div>
+                  <div class="form-group">
+                    <input id="phone" type="text" class="form-control" name="phone" value="" placeholder="Teléfono" required="">
+                  </div>
+                  <div class="form-group">
+                    <input id="direction" type="text" class="form-control" name="direction" value="" placeholder="Dirección" required="">
+                  </div>
+                  <div class="form-group">
+                    <select id="departament_id" name="departament_id" class="form-control">
+                      <option>*Departamento</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <input id="email" type="text" class="form-control" value="" placeholder="Email" name="email">
+                  </div>
+                </div>
 
+                <div class="col-sm-6 col-sm-offset-3">
+                  <div class="espc2"></div>
+                  <button type="submit" class="btn col4 bton-cart2 btn-block" style="border: 0;">Enviar</button>
+                  <div class="espc2"></div>
+                </div>
+              </form>
 
-<!-- foot ==================-->
-<div class="pre-box-blue-foot"></div>
-<div class="box-blue-foot">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-2">
-        <div class="menu-foot">
-          <h2 >Acerca de Nosotros</h2>
-          <ul>
-            <li><a href="#">Historia</a></li>
-            <li><a href="#">Misión</a></li>
-            <li><a href="#">Visión</a></li>
-            <li><a href="#">Trabaja con nosotros</a></li>
-            <li><a href="#">Convenios</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-sm-4">
-        <div class="menu-foot">
-          <h2 >Centro de Ayuda</h2>
-          <ul>
-            <li><a href="#">Términos y condiciones</a></li>
-            <li><a href="#">Política de Tratamiento de Datos Personales</a></li>
-            <li><a href="#">Políticas de envío</a></li>
-            <li><a href="#">PQRS</a></li>
-            <li><a href="#">Preguntas Frecuentes</a></li>
-            <li><a href="#">Política de Cambios y Garantías Retail y Mayorista</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-sm-2">
-        <div class="menu-foot">
-          <h2 >Donde Estamos</h2>
-          <ul>
-            <li><a href="#">Mapa de tiendas</a></li>
-            <li><a href="#">Contacto</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-sm-2">
-        <div class="menu-foot">
-          <h2>Nuestros Productos</h2>
-          <ul>
-            <li><a href="#">Catálogo</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-sm-2">
-        <div class="menu-foot">
-          <h2>Micro sites</h2>
-          <ul>
-            <li><a href="#">No-Varix</a></li>
-            <li><a href="#">NVX-Sport</a></li>
-          </ul>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <div class="info-foot">
-      <p>
-        <span>Consulta online:</span> 8:00 am - 5:00 pm   317 594 7111 <br> 
-        Ortopédicos Futuro Colombia S.A.S
-      </p>
-    </div>
-  </div><!-- container-->
-
-  <div class="container-fluid sinespa">
-    <div class="row sinespa">
-      <div class="col-md-6 col-sm-9 sinespa">
-        <div class="box-pagos-foot bckblue">
-          <p>MEDIOS DE <span>PAGO</span></p>
-          <ul>
-            <li><img src="assets/img/pse.png" class="img-responsive"></li>
-            <li><img src="assets/img/visa.png" class="img-responsive"></li>
-            <li><img src="assets/img/mastercard.png" class="img-responsive"></li>
-            <li><img src="assets/img/payu.png" class="img-responsive"></li>
-            <li><img src="assets/img/efecty.png" class="img-responsive"></li>
-          </ul>
-          <div class="clearfix"></div>
-        </div>
-      </div>
-      <div class="col-md-2 sinespa"></div>
-      <div class="col-md-3 col-sm-3 sinespa" >
-        <ul class="redes-foot">
-          <li><a href="#"><span class="of-instagram"></span></a></li>
-          <li><a href="#"><span class="of-facebook"></span></a></li>
-          <li><a href="#"><span class="of-whatsapp"></span></a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="assets/js/jquery-3.6.0-min.js" ></script>
-<script src="assets/js/bootstrap.min.js"></script>
-<script src="https://ortopedicosfuturo.com/vendor/ortopedicos/assets/js/jquery.fancybox.pack.js"></script>
-<script src="https://ortopedicosfuturo.com/vendor/ortopedicos/assets/js/slick.min.js"></script>
-<script src="assets/js/main.js"></script>
-<script src="assets/js/main-new.js"></script>
-</body>
-</html>
