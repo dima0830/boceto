@@ -1,11 +1,5 @@
 $(document).ready(function(){
-  $('#myAffix').affix({
-  offset: {
-    top: 200,
-    bottom: 100
-  }
-})
-  
+
   $('#header').prepend('<div id="menu-icon"><span class="first"></span><span class="second"></span><span class="third"></span></div>');
 
   $("#menu-icon").on("click", function(){
@@ -37,6 +31,15 @@ $('.btn-plus3, .btn-minus3').on('click', function(e) {
   e.preventDefault()
   const isNegative = $(e.target).closest('.btn-minus3').is('.btn-minus3');
   const input = $(e.target).closest('.sumar-deta').find('input');
+  if (input.is('input')) {
+    input[0][isNegative ? 'stepDown' : 'stepUp']()
+  }
+})
+// agrregar detalla-mobil
+$('.btn-plus4, .btn-minus4').on('click', function(e) {
+  e.preventDefault()
+  const isNegative = $(e.target).closest('.btn-minus4').is('.btn-minus4');
+  const input = $(e.target).closest('.sumar-deta2').find('input');
   if (input.is('input')) {
     input[0][isNegative ? 'stepDown' : 'stepUp']()
   }

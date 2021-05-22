@@ -68,6 +68,9 @@
 /*styles for mobile ==============================================Estilos todos======0=0*/
 
 @media (max-width: 767px) {
+  body{
+    padding: 60px 0;
+  }
   .mobil{
     display: block;
   }
@@ -76,27 +79,17 @@
 }
   .boxup{
     display: block;
-    padding: 5px;
-    background-color: #001278;
+    padding: 10px 0 5px;
+    background-color: #023fa0;
     position: fixed;
     bottom: 0;
     width: 100%;
     z-index: 10000;
   }
-  .boxup .dondezq a{
-    text-align: left;
-    padding: 4px 0 0;
-    color: #fff;
-  }
-  .boxup .dondeder a{
-    display: block;
-    text-align: right;
-    padding: 4px 0 0;
-    color: #fff;
-  }
-  .menu-sup{
-    display: none;
-  }
+.icono-foot-mobil{
+  color: #fff;
+  font-size: 40px;
+}
   .bar {
     display: inline-block;
     float: none;
@@ -211,6 +204,7 @@
     background: linear-gradient(to right, #00b5fa 0%,#0089ff 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00b5fa', endColorstr='#0089ff',GradientType=1 );
   }
+
   .logo {
     display: block;
     margin: 5px auto 5px !important;
@@ -291,6 +285,7 @@
 
  .mega-dropdown-menu {
   padding: 0 !important;
+  overflow: scroll;
 }
 .sin{
   padding: 0 !important;
@@ -315,17 +310,13 @@
   display: none;
 }
 .color-mobil{
-  color: #F0047F !important;
+  color: #013b84!important;
   font-weight: bold;
 }
 .mega-dropdown a br{
   display: none;
 }
-
-
-
-
-
+/*
 .slide .imgpc{
   display: none !important;
 }
@@ -369,263 +360,8 @@
 }
 
 .actve-scroll{
-  /*border:1px solid red;*/
+  /*border:1px solid red;
 }
-
-/*styles for mobile -FOOTER-*/
-
-.box-foot-mobil{
-  border-top: 2px solid #F0047F;
-  background: #5B5B5F;
-  padding: 0px 0 50px;
-}
-.list-foot-mobil h4 a .titu-foot{
- margin: 15px 0px 5px;
- color: #fff;
-}
-.list-foot-mobil h4 a .titu-foot i{
-  font-size: 14px;
-  margin-right: 5px;
-}
-.list-foot li a{
-  color: #001278;
-}
-.titu-foot2{
-  margin-top:10px;
-  color: #fff;
-}
-.redes-foot-mobil{
-  padding: 0;
-  margin-top: 0px;
-  text-align: right;
-}
-.redes-foot-mobil li{
-  display: inline-block;
-  padding: 0 2px!important;
-  margin: 0;
-}
-
-
-/*styles for mobile -HOME_*/
-
-.c-box, .c-box2{
-  height: auto;
-}
-#marcas .product{
-  margin: 0 0 5px 0;
-}
-.consejos .c-1 {
-  margin-bottom: 40px;
-}
-.consejos .c-1 img, .consejos .c-2 img{
-  width: 100%;
-  border:1px solid #333333;
-}
-
-.products .product {
-  padding: 20px;
-}
-.products .product img {
-  min-height: 0px;
-  max-height: none;
-  overflow: hidden;
-  width: 100%;
-}  
-.btn-list{
-  display: none;
-}
-/*styles for mobile -PRODUCTO_*/
-
-    /*.pq{
-    display: block;
-    padding: 20px 0;
-    margin: 10px 0 0;
-    border-top: 1px solid #001277;
-    }*/
-
-
-    .descrip{
-      padding: 0;
-      margin: 0;
-    }
-
-    .descrip li{
-      margin: 0px 0px 20px 0;
-    }
-    .numer{
-      border:1px solid #E5E5E5;
-      float: right;
-      border-top-left-radius:10px;
-      border-bottom-left-radius:10px;
-      border-top-right-radius: 0;
-      border-bottom-right-radius: 0;
-      width: 120px; /*ancho por defecto*/
-      background: #E5E5E5 url('../img/icon/flecha.png') no-repeat 84px center;
-      outline: none; /* ocultar el fucos automático de los input */
-      margin: 6px 0;
-      display: block;
-      appearance: none;
-      -webkit-appearance: none;
-      -moz-appearance: none;
-    }
-    .corre{
-      background: #E5E5E5 url('../img/icon/flecha.png') no-repeat 84px center;
-      margin: 0;
-    }
-    .li-prod{
-      background-color: #001277;
-      padding: 8px 15px;
-      color: #fff;
-      border-top-left-radius:10px;
-      border-bottom-left-radius:10px;
-      float: right;
-      margin: 4px 0;
-    }
-    /* nosotros*/
-    .box-titu{
-     background-color: #001278;
-     padding: 20px 2px;
-   }
-   .box-titu h1{
-    font-size: 17px;
-    color: #fff;
-    text-align: left;
-    margin: 0;
-  }
-  .box-titu h1 a{
-    color: #fff;
-  }
-  .box-titu h1 a i{
-    float: right;
-  }
-  .box-titu h1 span{
-    color: #fff;
-    display: inline-block;
-    margin: 0 5px;
-  }
-  .bor-produc {
-    border-top: 2px solid #001C88;
-    border-bottom: 2px solid #001C88;
-  }
-  .titu-product{
-    color: #001277;
-    font-size: 18px;
-    display: block;
-    border:0;
-
-  }
-  .titu-product span{
-    color: #808081;
-    font-size: 13px;
-  }
-  .precio{
-    margin: 18px 0 5px;
-    font-size: 20px;
-  }
-  .espc-prodc {
-    margin: 20px 0;
-  }
-  .img-det-prod{
-    text-align: center;
-  }
-  .img-det-prod img{
-    margin: 0 auto;
-  }
-  .mar-max{
-    bottom: -35px;
-  }
-  .mar-max li{
-    background-color: #CCCCCC;
-  }
-  .mar-max .active{
-    background-color: #BA007C;
-  }
-  .t-azul-mobil{
-    font-size: 22px;
-    color: #009BDB;
-    margin: 20px 0;
-  }
-  .list-prodt-mobil{
-    padding: 0;
-    color: #717175;
-  }
-  .li-prod-mobil{
-    display: block;
-    background-color: #BA007C;
-    color:#fff;
-    padding: 17.5px;
-    text-align: center;
-    font-size: 18px;
-  }
-  .bor{
-    border-left: 3px solid #fff;
-  }
-
-  .li-prod-mobil:focus,  .li-prod-mobil:hover {
-    color: #fff;
-  }
-
-  .edit-mobil{
-    display: block;
-    color: #009BDB;
-    margin: 15px 0 5px;
-    font-size: 18px;
-  }
-  .delete-mobil{
-    display: block;
-    color: #C1272F;
-    font-weight: bold;
-    margin: 15px 0 5px;
-    font-size: 18px;
-    font-family: 'Myriad Pro Bold Condensed';
-  }
-  .titu-gris{
-    color: #808080;
-    font-size: 20px;
-    margin: 0;
-  }
-  .number-mobil{
-    border: 1px solid #001C88;
-    float: right;
-    margin-right: 13px;
-    padding: 5px;
-    border-radius: 2px;
-  }
-  .ivas{
-    color: #717175;
-    background-color: #F7F7F8;
-    text-align: right;
-    padding: 2px 25px;
-    font-size: 20px;
-  }
-  .iva-m{
-    background-color: #ECEDEF;
-  }
-  .total-mobil{
-    font-size: 24px;
-    text-align: right;
-    padding: 2px 25px;
-    color: #434142;
-    font-family: 'Myriad Pro Bold Condensed';
-  }
-  .total-mobil strong{
-    color: #009ADA;
-    font-size: 20px;
-  }
-  .claro {
-    background-color: #001C88;
-    color: #fff;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    padding: 2px 12px;
-    font-size: 17px;
-    float: right;
-    margin: 10px 0 0;
-  }
-  .caragr{
-    display: inline-block;
-    width: 25px;
-    margin-right: 5px;
-  }
+*/
 }
 
