@@ -45,6 +45,7 @@ $('.btn-plus4, .btn-minus4').on('click', function(e) {
   }
 })
 
+
 });//fin
 
 // microfono
@@ -128,12 +129,5 @@ else {
   console.log("Your Browser does not support speech Recognition");
   info.textContent = "Your Browser does not support Speech Recognition";
 }
-
-
-
-
-
-
-
 
 

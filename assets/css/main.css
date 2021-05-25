@@ -179,6 +179,7 @@ nav>ul{
   padding: 0;
   margin: 0 auto 
   display: block;
+  text-align: center;
 }
 nav li{
 	list-style:none;
@@ -186,9 +187,10 @@ nav li{
 }
 nav li a{
 	display: block;
-	padding: 15px 15px 5px;
+	padding: 15px 14px 5px;
   color: #00a3e3;
   font-size: 15px;
+  text-align: left;
 }
 .bolita{
 	display: inline-block;
@@ -545,6 +547,10 @@ nav li li a:hover .line{
   -webkit-appearance: none;
   margin: 0;
 }
+.quantity[type=number] {
+    -moz-appearance:textfield;
+}
+
 .quantity,
 .btn-minus,
 .btn-plus{
@@ -2152,7 +2158,7 @@ ol{
 
 nav li a{
   float:left;
-  padding: 15px 8px 5px;
+  padding: 15px 7px 5px;
   color: #00a3e3;
   font-size: 12px;
 }
@@ -2181,7 +2187,11 @@ nav li a{
   height: 80px;
 }
 }
-@media (min-width: 1600px) and (max-width: 2000px){
+@media (min-width: 1024px) and (max-width: 1366px){
+  nav li a {
+    padding: 15px 7px 5px;
+}
+}
   .container-fluid{
     max-width: 1600px;
     margin: 0 auto;

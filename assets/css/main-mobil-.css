@@ -34,6 +34,7 @@
   box-shadow: none;
   -webkit-box-shadow: none;
   background-color: rgba(255, 255, 255,0.9);
+  border: 1px solid green;
 }
 .mega-dropdown-menu > li > ul {
   padding: 0;
@@ -316,52 +317,6 @@
 .mega-dropdown a br{
   display: none;
 }
-/*
-.slide .imgpc{
-  display: none !important;
-}
-.slide .imgmobil {
-  display: block !important;
-  width: auto;
-}
-.bannerhome{
-  margin-top: 10px;
-}
 
-.titu-mobil{
-  margin: 30px 0 10px;
-}
-#tienda, #tienda2 {
-  display: none;
-}
-#tienda-mobil {
-  display: block;
-}
-.products .indic{
-  bottom: -35px;
-}
-.products .indic li{
-  background-color: #CCCCCC;
-}
-.products .indic .active{
-  background-color: #BA007C;
-}
-.products .marg{
- bottom: -50px;
-}
-.tmob {
-  display: block;
-}
-#consejos-1 {
-  display: none;
-}
-#conmobil{
-  display: block;
-}
-
-.actve-scroll{
-  /*border:1px solid red;
-}
-*/
 }
 
