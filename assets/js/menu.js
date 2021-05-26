@@ -4,6 +4,7 @@ var contador = 1;
 
 function main () {
   $('.icon-bar').click(function(){
+    console.log(contador)
     if (contador == 1) {
       $('.nav').animate({
         left: '0'
@@ -18,7 +19,7 @@ function main () {
   });
 
   // Mostramos y ocultamos submenus
-  $('.submenu').click(function(){
+  $('.submenuOf').click(function(){
     $(this).children('.children').slideToggle();
   });
 }
