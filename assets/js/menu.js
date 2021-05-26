@@ -1,5 +1,3 @@
-$(document).ready(main);
-
 var contador = 1;
 
 function main () {
@@ -22,4 +20,16 @@ function main () {
   $('.submenuOf').click(function(){
     $(this).children('.children').slideToggle();
   });
+
+  $(window).scroll(function (event) {
+	    var scroll = $(window).scrollTop();
+	    // Do something
+	    if(scroll > 400) {
+	    	$( "#trBuscar" ).css("display", "block");
+	    } else {
+	    	$( "#trBuscar" ).css("display", "none");
+	    }
+	});
 }
+
+$(document).ready(main);
