@@ -14,6 +14,36 @@ ul{
   margin: 0;
   padding: 0;
 }
+.btn-primary{
+background: #0084ea;
+    background: -moz-linear-gradient(left, #0084ea 29%, #00b8f4 100%);
+    background: -webkit-linear-gradient(left, #0084ea 29%,#00b8f4 100%);
+    background: linear-gradient(to right, #0084ea 29%,#00b8f4 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0084ea', endColorstr='#00b8f4',GradientType=1 );
+    border: 0;
+  color: #fff;
+}
+.btn-secondary{
+  background: #dedc00; /* Old browsers */
+  background: -moz-linear-gradient(left,  #dedc00 5%, #52ae32 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left,  #dedc00 5%,#52ae32 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right,  #dedc00 5%,#52ae32 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dedc00', endColorstr='#52ae32',GradientType=1 ); /* IE6-9 */
+  border: 0;
+  color: #fff;
+}
+.btn-secondary:focus, .btn-secondary:hover, .btn-primary:focus, .btn-primary:hover{
+   background: #ffdd00; /* Old browsers */
+  background: -moz-linear-gradient(left,  #ffdd00 5%, #e30613 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left,  #ffdd00 5%,#e30613 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right,  #ffdd00 5%,#e30613 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffdd00', endColorstr='#e30613',GradientType=1 ); /* IE6-9 */
+  border: 0;
+  color: #fff;
+}
+.modal-content{
+  border:2px solid #0084ea;
+}
 .menusup{
 	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#003da3+0,003da3+96,00abf7+100 */
   background: #003da3; /* Old browsers */
@@ -117,7 +147,7 @@ ul{
 }
 .list-menusup li a{
   color: #fff;
-  font-size: 3.4rem;
+  font-size: 3rem;
   display: block;
   line-height: 0;
   position: relative;
@@ -827,7 +857,7 @@ nav li li a:hover .line{
 .bton {
   width: auto;
   display: inline-block;
-  padding: 5px 20px;
+  padding: 5px 15px;
   color: #fff;
   border-radius: 7px;
 }
@@ -1017,13 +1047,13 @@ nav li li a:hover .line{
 }
 .totaln{
   font-size: 20px;
-  color: #e76018;
+   color: #003da3;
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
 }
 .total2{
   font-size: 19px;
-  color: #7a869c;
+  color: #e76018;
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
 }

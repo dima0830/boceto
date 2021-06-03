@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'oficons';
-  src:  url('../fonts/oficons.eot?vebshu');
-  src:  url('../fonts/oficons.eot?vebshu#iefix') format('embedded-opentype'),
-    url('../fonts/oficons.ttf?vebshu') format('truetype'),
-    url('../fonts/oficons.woff?vebshu') format('woff'),
-    url('../fonts/oficons.svg?vebshu#oficons') format('svg');
+  src:  url('../fonts/oficons.eot?chb6wg');
+  src:  url('../fonts/oficons.eot?chb6wg#iefix') format('embedded-opentype'),
+    url('../fonts/oficons.ttf?chb6wg') format('truetype'),
+    url('../fonts/oficons.woff?chb6wg') format('woff'),
+    url('../fonts/oficons.svg?chb6wg#oficons') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,45 +25,48 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.of-cart:before {
+.of-here:before {
   content: "\e900";
 }
-.of-delete:before {
+.of-cart:before {
   content: "\e901";
 }
-.of-empleados:before {
+.of-delete:before {
   content: "\e902";
 }
-.of-facebook:before {
+.of-empleados:before {
   content: "\e903";
 }
-.of-heard:before {
+.of-facebook:before {
   content: "\e904";
 }
-.of-here:before {
+.of-heard:before {
   content: "\e905";
 }
-.of-instagram:before {
+.of-heard-full:before {
   content: "\e906";
 }
-.of-lupa:before {
+.of-instagram:before {
   content: "\e907";
 }
-.of-phone:before {
+.of-lupa:before {
   content: "\e908";
 }
-.of-reload:before {
+.of-phone:before {
   content: "\e909";
 }
-.of-user:before {
+.of-reload:before {
   content: "\e90a";
 }
-.of-voice:before {
+.of-user:before {
   content: "\e90b";
 }
-.of-voice-slash:before {
+.of-voice:before {
   content: "\e90c";
 }
-.of-whatsapp:before {
+.of-voice-slash:before {
   content: "\e90d";
+}
+.of-whatsapp:before {
+  content: "\e90e";
 }
